@@ -1,0 +1,21 @@
+{
+  "name": "indian-life-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Indian Life Simulator — Android game (HTML5 wrapped with Capacitor)",
+  "scripts": {
+    "serve": "npx serve www",
+    "android:add": "npx cap add android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:debug-apk": "npx cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/share": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
