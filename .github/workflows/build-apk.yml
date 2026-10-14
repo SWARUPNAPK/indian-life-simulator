@@ -17,6 +17,13 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
+      - name: Make sure www folder exists
+        run: |
+          mkdir -p www
+          if [ ! -f www/index.html ] && [ -f index.html ]; then cp index.html www/index.html; fi
+          if [ ! -f www/game.js ] && [ -f game.js ]; then cp game.js www/game.js; fi
+          ls -la www
+          test -f www/index.html && test -f www/game.js
       - run: npm install
       - run: test -d android || npx cap add android
       - run: npx cap sync android
