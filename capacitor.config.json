@@ -1,8 +1,0 @@
-{
-  "appId": "com.example.indianlifesimulator",
-  "appName": "Indian Life Simulator",
-  "webDir": "www",
-  "android": {
-    "backgroundColor": "#fff8ef"
-  }
-}
